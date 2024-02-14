@@ -3,6 +3,8 @@ package com.driver;
 public class Main {
     public static void main(String[] args) {
         RWOnly obj = new RWOnly();
-        obj.name = "Naveen Kumar";
+        //obj.name = "Naveen Kumar"; //ERROR : name has private access in com.driver.RWOnly
+        obj.setName("Naveen kumar");
+        System.out.pritln(obj.getName());
     }
 }
